@@ -1,0 +1,51 @@
+% Font must be at least 12pt, 10pt for figures
+\documentclass[12pt, letterpaper]{article} 
+\usepackage{cosyne}
+\usepackage{lipsum}
+
+
+%%%%  Submission rules
+% Font must be at least 12 pt. 10pt for figures
+% Use sentence case title
+% Maring must be at least 0.5 in
+
+\title{\color{custom}\large{\vspace{-1.5cm}%
+    Cosyne Abstract Title}}
+\date{}
+\author{}
+
+\begin{document}
+
+\maketitle
+\vspace*{-2cm}
+
+\lipsum[0-3]
+
+\vspace*{-0.2cm}
+\hrulefill
+
+\lipsum[4-5]
+\begin{wrapfigure}[10]{r}{0.3\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{imgs/linear_cartoon.pdf}
+    \caption{Image from~\citet{ramesh2024many}, visualizing different orthogonal subspaces.}
+\end{wrapfigure}
+\lipsum[6-8]
+
+\begin{figure}[!htb]
+    \vspace*{-1em}
+    \centering
+    \includegraphics[width=0.39\linewidth]{imgs/panel1.pdf}
+    \includegraphics[width=0.55\linewidth]{imgs/panel2.pdf}
+    \caption{Images from~\citet{ramesh2024many}}
+\end{figure}
+\lipsum[8-13]
+
+% \clearpage
+\nobibliography{ref.bib}
+\bibliographystyle{IEEEtranN}
+
+
+
+\end{document}
+

@@ -1,0 +1,56 @@
+\usepackage{geometry}
+\geometry{a4paper, margin=0.50in} % Marign must be at least 0.5
+
+\usepackage{natbib}
+\setcitestyle{authoryear} %Citation-related commands
+
+\usepackage[bookmarks=true]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% \usepackage{pslatex}       
+% \usepackage{newtxtext}    
+% \usepackage{cmbright}
+\renewcommand*\familydefault{\sfdefault}
+
+\usepackage{hyperref}                     % hyperlinks
+\usepackage{wrapfig}
+\usepackage{url}                          % simple URL typesetting
+\usepackage{booktabs,tabularx}            % professional-quality tables
+\usepackage{amsfonts,nicefrac,amsmath}    % blackboard math symbols
+\usepackage{nicefrac}
+\usepackage{microtype}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage[acronym]{glossaries}
+\usepackage{graphicx}
+\usepackage{soul}
+\usepackage{xspace}
+\usepackage{caption}
+\usepackage{siunitx}
+\usepackage{bibentry}
+\usepackage{cleveref}
+
+\Crefname{figure}{Fig.}{Figs.}
+
+
+% Paragraph spacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em}
+
+% Line spacing
+\renewcommand{\baselinestretch}{0.95}
+
+% Set figure caption font to 10pt
+\captionsetup{font=footnotesize}
+
+\graphicspath{{../}}
+\definecolor{custom_blue}{HTML}{1565c0}
+\definecolor{custom_red} {HTML}{800000}
+\colorlet{custom}{custom_blue}
+
+\hypersetup{
+    colorlinks,
+    citecolor=custom_blue,
+    linkcolor=custom,
+    urlcolor=custom,
+}
